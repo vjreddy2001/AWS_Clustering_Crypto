@@ -1,8 +1,6 @@
 
 # AWS_Clustering_Crypto
 
-## Option 2: Clustering Crypto
-
 ![clust](https://user-images.githubusercontent.com/83671629/128429354-88392356-5b4c-4384-ba1f-c7f3d873c0be.png)
 
 ### Background
