@@ -2,8 +2,7 @@
 
 ## Option 2: Clustering Crypto
 
-![Cryptocurrencies coins](Images/cryptocurrencies-coins.jpg)
-_[Cryptocurrencies coins by Worldspectrum](https://www.pexels.com/@worldspectrum?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/photo-license/)_
+_[Cryptocurrencies coins by Worldspectrum]utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/photo-license/)_
 
 ### Background
 
