@@ -35,7 +35,7 @@ Using this tool the following main tasks were accomplished:
 
 To start off I loaded the information about cryptocurrencies and performed data preprocessing tasks.  (this can be done by any one of the following methods to load the data):
 
-1. Using the provided `CSV` file, creating a `Path` object and read the file data directly into a DataFrame named `crypto_df` using `pd.read_csv()`.
+1. Using the provided `CSV` file, creating a `Path` object and read the file data directly into a DataFrame named `crypto_df` using `pd.read_csv()` (I used this method).
 
 2. Using the following `requests` library, retreive the necessary data from the following API endpoint from _CryptoCompare_ - `https://min-api.cryptocompare.com/data/all/coinlist`.  __HINT:__ use the 'Data' key from the json response, then transpose the DataFrame. Name your DataFrame `crypto_df`.
 
@@ -71,7 +71,8 @@ Once the data dimensions were reduced, created a DataFrame named `pcs_df` using 
 
 The DataFrame looks as the following:
 
-![pcs_df](Images/pcs_df.png)
+![pcs_df](https://user-images.githubusercontent.com/83671629/129432447-40ad337f-c3bd-403d-a35f-325367e1cd01.png)
+
 
 #### Clustering Cryptocurrencies Using K-Means
 
@@ -85,17 +86,21 @@ Performed the following tasks:
 
 3. Created a new DataFrame named `clustered_df`, that includes the following columns `"Algorithm", "ProofType", "TotalCoinsMined", "TotalCoinSupply", "PC 1", "PC 2", "PC 3", "CoinName", "Class"`. You should maintain the index of the `crypto_df` DataFrames as is shown bellow.
 
-    ![clustered_df](Images/clustered_df.png)
+    ![df2](https://user-images.githubusercontent.com/83671629/129432496-83aec795-2fd0-4f85-9a71-6395528e12cf.png)
+
 
 #### Visualizing Results
 
 Created some data visualization to present the final results. The following tasks were performed:
 
 1. Created a 3D-Scatter using Plotly Express to plot the clusters using the `clustered_df` DataFrame. The following parameters were included on the plot: `hover_name="CoinName"` and `hover_data=["Algorithm"]` to show this additional info on each data point.
+![plot](https://user-images.githubusercontent.com/83671629/129432559-a983d4b4-4b96-4470-aa43-a3389f699569.png)
 
 2. Used `hvplot.table` to create a data table with all the current tradable cryptocurrencies. The table had the following columns: `"CoinName", "Algorithm", "ProofType", "TotalCoinSupply", "TotalCoinsMined", "Class"`
+![hvplot](https://user-images.githubusercontent.com/83671629/129432561-ca44b4ff-cace-4033-ba64-acc977028972.png)
 
 3. Created a scatter plot using `hvplot.scatter`, to present the clustered data about cryptocurrencies having `x="TotalCoinsMined"` and `y="TotalCoinSupply"` to contrast the number of available coins versus the total number of mined coins. Used the `hover_cols=["CoinName"]` parameter to include the cryptocurrency name on each data point.
+![bokeh_plot](https://user-images.githubusercontent.com/83671629/129432568-473ddfe2-14ac-44fe-9d3e-ed3269b38f11.png)
 
 
 #### Complementary Resources
